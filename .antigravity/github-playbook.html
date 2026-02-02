@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gareth's GitHub & Antigravity Playbook</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #f4f4f9;
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #e67e22;
+            margin-top: 30px;
+        }
+
+        .command {
+            background: #2d3436;
+            color: #fab1a0;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .step {
+            background: white;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            margin-bottom: 10px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        code {
+            background: #dfe6e9;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🚀 GitHub & Antigravity Playbook</h1>
+    <p>A step-by-step guide for starting projects and saving work.</p>
+
+    <h2>Phase 1: Identity Setup</h2>
+    <div class="step">
+        <strong>Goal:</strong> Sign your work so GitHub knows it is you.
+        <span class="command">git config --global --replace-all user.name "GarethJ"</span>
+        <span class="command">git config --global --replace-all user.email "jjones@dopainium.com"</span>
+    </div>
+
+    <h2>Phase 2: The "Save" Cycle (Branching)</h2>
+    <div class="step">
+        <strong>1. Create a "Draft" Branch:</strong> Never work on <code>main</code> directly.
+        <span class="command">git checkout -b branch-name-here</span>
+    </div>
+    <div class="step">
+        <strong>2. Stage Changes:</strong> Put your new work in the "box."
+        <span class="command">git add .</span>
+    </div>
+    <div class="step">
+        <strong>3. Commit:</strong> Seal the "box" with a label.
+        <span class="command">git commit -m "Describe what you did here"</span>
+    </div>
+    <div class="step">
+        <strong>4. Push:</strong> Send the box to GitHub.
+        <span class="command">git push --set-upstream origin branch-name-here</span>
+    </div>
+
+    <h2>Phase 3: Merging & Syncing</h2>
+    <div class="step">
+        <strong>1. Pull Request:</strong> On GitHub.com, click "Compare & pull request" and then "Merge."
+    </div>
+    <div class="step">
+        <strong>2. Back to Main:</strong> Switch back to the official version on your Mac.
+        <span class="command">git checkout main</span>
+    </div>
+    <div class="step">
+        <strong>3. Pull:</strong> Download the merged work to your Mac.
+        <span class="command">git pull origin main</span>
+    </div>
+
+    <h2>Antigravity Specifics</h2>
+    <div class="step">
+        <strong>Folder Structure:</strong> Always put skills here:
+        <code>.antigravity/skills/your-skill.md</code>
+    </div>
+    <div class="step">
+        <strong>Security:</strong> If Terminal asks for a password, use your <strong>Personal Access Token
+            (PAT)</strong>, not your GitHub password.
+    </div>
+
+    <footer style="margin-top: 50px; font-size: 0.8em; color: #7f8c8d;">
+        Created for GarethJCA - Learning GitHub from Scratch.
+    </footer>
+</body>
+
+</html>
